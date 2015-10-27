@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OpenHistoricalMap</title>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+
+	<aside>
+		<img src="assets/ohm.png" alt="OpenHistoricalMap Logo" />
+		<h1>OpenHistoricalMap</h1>
+
+		<form action="" onsubmit="ohm.app.search.basicSearch()" class="search">
+			<span class="material-icons">search</span>
+			<input id="search" type="text" autocomplete="off" />
+		</form>
+
+		<div class="btn-box">
+			<a class="btn" href="#">User Guides</a>
+			<a class="btn" href="#">Edit Now!</a>
+			<a class="btn" href="#">Developers</a>
+		</div>
+	</aside>
+
+	<div id="map"></div>
+
+	<div class="control-group">
+		<div id="zoomIn" class="material-icons" onclick="leaflet.zoomIn()">zoom_in</div>
+		<div id="zoomOut" class="material-icons" onclick="leaflet.zoomOut()">zoom_out</div>
+		<div id="edit" class="material-icons">edit</div>
+	</div>
+
+	<div id="error-group">
+	</div>
+
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="js/leaflet-hash.js"></script>
+	<script src="js/ohm.js"></script>
+	<script>
+	  ohm.init();
+	</script>
+	</body>
+</html>

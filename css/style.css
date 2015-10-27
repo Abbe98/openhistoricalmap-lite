@@ -1,0 +1,128 @@
+* {
+  transition: .5s;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  font: 15px/20px 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+#map {
+  width: calc(100% - 250px);
+  height: 100vh;
+  top: 0;
+  right: 0px;
+  position: absolute;
+  z-index: 0;
+}
+
+aside {
+  width: 250px;
+  height: 100vh;
+  margin: 0;
+  top: 0;
+  background-color: #28353d;
+  z-index: 50;
+  text-align: center;
+}
+
+aside img {
+  margin-top: 30px;
+}
+
+.search {
+  position: relative;
+  height:20px;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid #fff;
+  background: #222b30;
+  width: 200px;
+}
+
+.search span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+input {
+  vertical-align: top;
+  display: inline-block;
+  -webkit-appearance: none;
+  color: #fff;
+  box-shadow: none;
+  outline: 0;
+  background: #222b30;
+  border: 0;
+  left: 40px;
+  position: absolute;
+  line-height: 20px;
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 15px 0px 15px 0px;
+  width: 200px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #222b30;
+}
+
+.btn-box {
+  position: absolute;
+  bottom: 0;
+  max-width: 250px;
+}
+
+.control-group {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.control-group div {
+  display: inherit;
+  text-align: center;
+  background-color: #28353d;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.control-group div:hover {
+  background: #222b30;
+}
+
+#error-group {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+#error-group p {
+  background-color: #28353d;
+  text-align: center;
+  min-width: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid #fff;
+}
