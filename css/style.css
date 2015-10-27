@@ -6,6 +6,7 @@ body {
   margin: 0;
   color: #fff;
   font: 15px/20px 'Open Sans', sans-serif;
+  background-color: #222b30;
 }
 
 h1,
@@ -15,7 +16,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  text-align: center;
 }
 
 #map {
@@ -35,6 +35,7 @@ aside {
   background-color: #28353d;
   z-index: 50;
   text-align: center;
+  position: fixed;
 }
 
 aside img {
@@ -125,4 +126,52 @@ input {
   padding-top: 15px;
   padding-bottom: 15px;
   border: 2px solid #fff;
+}
+
+main {
+  width: calc(100% - 250px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main div {
+  margin: auto;
+  color: #333;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+main div ul {
+  list-style: square;
+}
+
+main div h3 {
+  font-size: 150%;
+}
+
+main div h4 {
+  font-size: 130%;
+}
+
+main div h5 {
+  font-size: 110%;
+}
+
+main div a {
+  color: #222b30;
+  text-decoration: none;
+}
+
+main div a:focus,
+main div a:hover,
+main div a:active {
+  color: #222b30;
+  text-decoration: underline;
 }
