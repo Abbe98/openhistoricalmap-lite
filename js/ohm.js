@@ -74,7 +74,7 @@ ohm.app.overpass = {
     httpRequest.onreadystatechange = function() {
       if (httpRequest.readyState == 4 && httpRequest.status == 200) {
         var result = JSON.parse(httpRequest.responseText);
-        console.log(result);
+
         if (result.elements.length == 0) {
           ohm.app.ui.error('No data exists');
         }
